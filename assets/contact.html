@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+         <link rel="icon" type="image/x-icon" href="./img/cafe-hub_logo.ico">
+         <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+         <link rel="icon" type="image/x-icon" sizes="192x192" href="./img/android-chrome-192x192.png">
+         <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+    <title>Contact</title>
+</head>
+<body>
+  <main>
+   <header class="header-container">                  
+             <figure class="logo">
+             <a href="#home"><img src="./img/cafe hub_logo.svg" alt="logo icon"></a>
+             </figure>
+
+    <!-- The accesskey attribute in html is used for accessing larger accessibility in website  especially for user disability -->
+     <nav class="navBar">
+       <ul class="navList">
+         <li><a href="index.html" accesskey="h" target="_blank">h o m e</a></li> 
+         <li><a href="menu.html" accesskey="m" target="_blank">m e n u</a></li>
+         <li><a href="blog.html" accesskey="b" target="_blank">b l o g</a></li>
+          <li><a href="gallery.html" accesskey="g" target="_blank">g a l l e r y</a></li>
+         <li><a href="about.html" accesskey="a" target="_blank"> a b o u t</a></li>
+         <li><a href="contact.html" accesskey="c" target="_blank">c o n t a c t</a></li>
+       </ul>
+     </nav>
+     <div class="iconsField">
+      <!-- For login page container; newly launched attribute popovertarget is used, replaced modal -->
+      <button type="button" style="background-color: transparent; border: none;"><span class="icon"><img src="./img/signup-icon.png" alt="SignUp Icon"></span></button> 
+      <div id="loginPageContainer" popover>
+      <h2>Login form</h2>
+      </div>
+
+       <span class="icon"><img src="./img/cart-icon.png" alt=" Add Cart Icon"></span>
+<span class="icon"><a href="https://www.google.com/maps/place/The+Ministry+Bar+and+Cafe/@27.7190317,85.3260304,17z/data=!3m1!4b1!4m6!3m5!1s0x39eb195b334ad359:0xa843a59cd33408d9!8m2!3d27.7190317!4d85.3286053!16s%2Fg%2F11pk_16jj5?entry=ttu" target="_blank"><img src="./img/location-icon.png" alt="location Icon"></a></span>
+
+     </div>
+     
+     </header>
+    <section id="contact" class="contact-section">
+  <div class="contact-content">
+    <h2 class="section-title">Contact Us</h2>
+    <form id="contactForm" class="contact-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="you@gmail.com" required>
+
+      <label for="phone">Phone</label>
+      <input type="text" id="phone" name="phone" placeholder="98XXXXXXXX" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="4" placeholder="Type your message..."></textarea>
+
+      <button type="submit" class="submit-button">Send Message</button>
+    </form>
+    <div class="map-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.019193656869!2d85.32581251506114!3d27.717245582792353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb195b334ad359%3A0xa843a59cd33408d9!2sThe%20Ministry%20Bar%20and%20Cafe!5e0!3m2!1sen!2snp!4v1689911320125" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+<p>&copy; 2025 Cafe Hub. Brewed with love in Kathmandu. All rights reserved.</p>
+</footer>
+
+<!-- JS for form validation -->
+<script>
+  document.getElementById("contactForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+
+    const nameRegex = /^[^\d]+$/;
+    const phoneRegex = /^\d+$/;
+    const emailRegex = /^[^\s@]+@gmail\.com$/;
+
+    if (!nameRegex.test(name)) {
+      alert("Name should not contain numbers!");
+      return;
+    }
+
+    if (!emailRegex.test(email)) {
+      alert("Email should be a valid @gmail.com address!");
+      return;
+    }
+
+    if (!phoneRegex.test(phone)) {
+      alert("Phone number should contain only digits!");
+      return;
+    }
+
+    alert("Form submitted successfully!");
+    document.getElementById("contactForm").reset();
+  });
+</script>
+
+
+  </main>
+</body>
+</html>

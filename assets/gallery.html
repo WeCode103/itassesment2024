@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cafe Hub Gallery</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      background-color: #131313;
+      color: white;
+      font-family: 'btnfont', sans-serif;
+      margin: 0;
+      padding: 2rem;
+    }
+    .gallery-container {
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    .gallery-container img {
+      width: 100%;
+      height: 260px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+    .gallery-container img:hover {
+      transform: scale(1.05);
+    }
+    .gallery-title {
+      text-align: center;
+      font-size: 3rem;
+      font-family: 'Sundaycoffee', cursive;
+      color: #e09f35e8;
+      margin-bottom: 2rem;
+    }
+  </style>
+</head>
+<body>
+    <main>
+        <header class="header-container">                  
+             <figure class="logo">
+             <a href="#home"><img src="./img/cafe hub_logo.svg" alt="logo icon"></a>
+             </figure>
+
+    <!-- The accesskey attribute in html is used for accessing larger accessibility in website  especially for user disability -->
+     <nav class="navBar">
+       <ul class="navList">
+         <li><a href="index.html" accesskey="h" target="_blank">h o m e</a></li> 
+         <li><a href="menu.html" accesskey="m" target="_blank">m e n u</a></li>
+         <li><a href="blog.html" accesskey="b" target="_blank">b l o g</a></li>
+          <li><a href="gallery.html" accesskey="g" target="_blank">g a l l e r y</a></li>
+         <li><a href="about.html" accesskey="a" target="_blank"> a b o u t</a></li>
+         <li><a href="contact.html" accesskey="c" target="_blank">c o n t a c t</a></li>
+       </ul>
+     </nav>
+     <div class="iconsField">
+      <!-- For login page container; newly launched attribute popovertarget is used, replaced modal -->
+      <button type="button" style="background-color: transparent; border: none;"><span class="icon"><img src="./img/signup-icon.png" alt="SignUp Icon"></span></button> 
+      <div id="loginPageContainer" popover>
+      <h2>Login form</h2>
+      </div>
+
+       <span class="icon"><img src="./img/cart-icon.png" alt=" Add Cart Icon"></span>
+<span class="icon"><a href="https://www.google.com/maps/place/The+Ministry+Bar+and+Cafe/@27.7190317,85.3260304,17z/data=!3m1!4b1!4m6!3m5!1s0x39eb195b334ad359:0xa843a59cd33408d9!8m2!3d27.7190317!4d85.3286053!16s%2Fg%2F11pk_16jj5?entry=ttu" target="_blank"><img src="./img/location-icon.png" alt="location Icon"></a></span>
+
+     </div>
+     
+     </header>
+  <h1 class="gallery-title">Gallery</h1>
+  <div class="gallery-container">
+    <img src="img/cafe counter.jpg" alt="Cafe Counter">
+    <img src="img/cafe fronthall.webp" alt="Front Hall">
+    <img src="img/coffe and corossaint.jpg" alt="Coffee and Croissant">
+    <img src="img/customer satisfaction.webp" alt="Customer Satisfaction">
+    <img src="img/coffee and sandwich.jpg" alt="Coffee and Sandwich">
+  </div>
+  
+<footer class="footer">
+  <p>&copy; 2025 Cafe Hub. Brewed with love in Kathmandu. All rights reserved.</p>
+</footer>
+  </main>
+</body>
+</html>

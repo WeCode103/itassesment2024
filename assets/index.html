@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+ <html>
+   <head>
+         <title>Cafe Hub</title>
+         <meta charset="UTF-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="./css/style.css">
+         <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-1JiXhpO45K5Qv9z+9K6vqT3ti4p3HzV4BKpjO+UWkqcvm1po/h3i6YUBPxGyFQsz" crossorigin="anonymous"> -->
+         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+         <link rel="icon" type="image/x-icon" href="./img/cafe-hub_logo.ico">
+         <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+         <link rel="icon" type="image/x-icon" sizes="192x192" href="./img/android-chrome-192x192.png">
+         <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+     </head>
+   <body>
+     <main>
+        
+           <header class="header-container">                  
+             <figure class="logo">
+             <a href="#home"><img src="./img/cafe hub_logo.svg" alt="logo icon"></a>
+             </figure>
+
+    <!-- The accesskey attribute in html is used for accessing larger accessibility in website  especially for user disability -->
+     <nav class="navBar">
+       <ul class="navList">
+         <li><a href="index.html" accesskey="h" target="_blank">h o m e</a></li> 
+         <li><a href="menu.html" accesskey="m" target="_blank">m e n u</a></li>
+         <li><a href="blog.html" accesskey="b" target="_blank">b l o g</a></li>
+          <li><a href="gallery.html" accesskey="g" target="_blank">g a l l e r y</a></li>
+         <li><a href="about.html" accesskey="a" target="_blank"> a b o u t</a></li>
+         <li><a href="contact.html" accesskey="c" target="_blank">c o n t a c t</a></li>
+       </ul>
+     </nav>
+     <div class="iconsField">
+      <!-- For login page container; newly launched attribute popovertarget is used, replaced modal -->
+      <button type="button" style="background-color: transparent; border: none;"><span class="icon"><img src="./img/signup-icon.png" alt="SignUp Icon"></span></button> 
+      <div id="loginPageContainer" popover>
+      <h2>Login form</h2>
+      </div>
+
+       <span class="icon"><img src="./img/cart-icon.png" alt=" Add Cart Icon"></span>
+<span class="icon"><a href="https://www.google.com/maps/place/The+Ministry+Bar+and+Cafe/@27.7190317,85.3260304,17z/data=!3m1!4b1!4m6!3m5!1s0x39eb195b334ad359:0xa843a59cd33408d9!8m2!3d27.7190317!4d85.3286053!16s%2Fg%2F11pk_16jj5?entry=ttu" target="_blank"><img src="./img/location-icon.png" alt="location Icon"></a></span>
+
+     </div>
+     
+     </header>
+
+
+   <section id="home-container">
+<div class="video-banner">
+  <!-- Fallback image inside <video> as <img> if needed -->
+ <video autoplay muted loop playsinline preload="metadata" class="bg-video">
+  <source src="./video/coffeBeanRain-Animation.mp4"type="video/mp4">
+  <img src="./img/fallbackBanner.jpeg" alt="Fallback">
+</video>
+
+  <!-- Overlay content (text + image) -->
+  <div class="banner-overlay">
+    <h1 class="banner-heading">
+      For Coffee Connoisseurs:<br>
+      Every Brew Tells a Story <br> ~ Cafe Hub
+    </h1>
+    <img class="banner-img" src="./img/bannerimg-removebg.png" alt="coffeeBannerImg" />
+  </div>
+
+  <!-- Scroll down arrow -->
+  <div class="explorelink">
+    <a href="#footer" class="icon">
+      <img src="../assets/img/down-arrow (1).svg" alt="Scroll down">
+    </a>
+  </div>
+</div>
+
+          
+<div class="img-slider">
+  <div class="coffee-slider">
+    <div class="animation-overlay">
+
+  <div id="slide-img1">
+    <h2>The inviting counter hall of CAFE HUB, featuring a variety of coffee drinks and baked goods.</h2>
+    <a href="./img/cafe counter.jpg" target="_blank">
+      <img src="img/cafe counter.jpg" alt="Coffee Image 1">
+    </a>
+  </div>
+
+  <div id="slide-img2">
+    <h2>"Your coffee break awaits! Relax and unwind in our cafe hall."</h2>
+    <a href="img/cafe fronthall.webp" target="_blank">
+      <img src="img/cafe fronthall.webp" alt="Coffee Image 2">
+    </a>
+  </div>
+
+  <div id="slide-img3">
+    <h2>Our cafe hall offers a cozy atmosphere, where you can unwind and enjoy a cup of coffee or a delicious snack.</h2>
+    <a href="img/coffe and corossaint.jpg" target="_blank">
+      <img src="img/coffe and corossaint.jpg" alt="Coffee Image 3">
+    </a>
+  </div>
+
+  <div id="slide-img4">
+    <h2>More than just coffee, we offer a welcoming atmosphere and attentive service. - CAFE HUB</h2>
+    <a href="img/customer satisfaction.webp" target="_blank">
+      <img src="img/customer satisfaction.webp" alt="Coffee Image 4">
+    </a>
+  </div>
+
+  <div id="slide-img5">
+    <h2>The perfect balance: a rich macchiato with a light and refreshing sandwich.</h2>
+    <a href="img/coffee and sandwich.jpg" target="_blank">
+      <img src="img/coffee and sandwich.jpg" alt="Coffee Image 5">
+    </a>
+  </div>
+
+    </div>
+
+   </div>
+ </div>
+  <div class="button-container">
+               <button type="button" id="button_CTA">BUY NOW<span class="cup-icon"><img src="../assets/img/coffee-cup.svg"></span></button>
+               
+             </div>
+             <div class="welcome-message">
+               <h1>Cafe Hub: Where Coffee Lovers Connect</h1>
+               <h3>Discover Cafe Hub: Crafting Moments,One Espresso at a Time</h3></br>
+             <article> 
+               <p>"Welcome coffee lovers! Step into a world of aroma and flavor, "At Cafe Hub, we pride ourselves on crafting moments, one espresso at a time. Our dedication to the art of coffee craftsmanship is evident in every cup we serve. With each meticulously brewed espresso, we aim not only to tantalize your taste buds but also to create cherished memories that linger long after the last sip. Step into our welcoming space and experience the warmth of our community, where every interaction is infused with passion and care.Find your new favorite coffee and let the adventure begin!"</p>
+             </article>
+             </div>
+    </section> 
+        
+  
+
+
+<footer class="footer">
+  <p>&copy; 2025 Cafe Hub. Brewed with love in Kathmandu. All rights reserved.</p>
+</footer>
+
+
+
+     </main>
+     <script src="/script.js"></script>
+     </body>
+ </html>  
